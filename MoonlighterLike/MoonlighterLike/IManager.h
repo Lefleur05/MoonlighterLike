@@ -2,6 +2,8 @@
 #include <map>
 #include <vector>
 
+using namespace std;
+
 template <typename Key, typename Value>
 class IManager
 {
@@ -20,7 +22,7 @@ public:
 	}
 
 public:
-	void Add(const key& _key, Value* _value)
+	void Add(const Key& _key, Value* _value)
 	{
 		if (Exist(_value))return;
 		_value->SetID(_key);
@@ -31,13 +33,13 @@ public:
 	void Remove(Value* _value)
 	{
 		if (!Exist(_value))return;
-		_value->setRemove(true)
+		_value->setRemove(true);
 	}
 
 	void Remove(const Key& _key)
 	{
 		if (!Exist(_key))return;
-		allValues[_key]->setRemove(true)
+		allValues[_key]->setRemove(true);
 	}
 
 	void GareBageValues()

@@ -13,27 +13,125 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers sources\Manager">
+      <UniqueIdentifier>{514dd278-d6ce-450e-80f2-f7c328a08f53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Manager\Entity">
+      <UniqueIdentifier>{74cdbd28-6ed1-4066-a52f-c059a15b2bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Manager\Map">
+      <UniqueIdentifier>{350a4882-072d-4aae-8324-a557c10ad4ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Manager\Input">
+      <UniqueIdentifier>{22cc7c1c-2dcd-41fa-ad58-ef557d3a405f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Manager\Texture">
+      <UniqueIdentifier>{54451c3e-2f8e-4be4-98d7-68a2df931435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Manager\Font">
+      <UniqueIdentifier>{77c326a4-0d55-487f-b766-92bebbeba943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Entity">
+      <UniqueIdentifier>{cc93014c-6d66-423a-96c5-874f875c191a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game">
+      <UniqueIdentifier>{8155a0eb-4d2e-4e59-9b34-b604a5d9339f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Map">
+      <UniqueIdentifier>{553c61c2-98e1-462b-816f-de50d7c4900e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Map\Grid">
+      <UniqueIdentifier>{d02b6b9b-3d5d-4047-af7c-fed5c46f0a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Map\Tile">
+      <UniqueIdentifier>{6c812981-9ba4-4f16-8476-64c1d0f8e2e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EntityManager.cpp">
+      <Filter>Fichiers sources\Manager\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Fichiers d%27en-tête\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Fichiers d%27en-tête\Game</Filter>
+    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="Map.cpp">
+      <Filter>Fichiers d%27en-tête\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>Fichiers sources\Manager\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Fichiers d%27en-tête\Map\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Fichiers d%27en-tête\Map\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Fichiers sources\Manager\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureData.cpp">
+      <Filter>Fichiers sources\Manager\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="FontData.cpp">
+      <Filter>Fichiers sources\Manager\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Fichiers sources\Manager\Font</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Singleton.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="IManagable.h">
+      <Filter>Fichiers sources\Manager</Filter>
     </ClInclude>
     <ClInclude Include="IManager.h">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Manager</Filter>
     </ClInclude>
-    <ClInclude Include="IManagable.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="Singleton.h">
+      <Filter>Fichiers sources\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Fichiers sources\Manager\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Fichiers d%27en-tête\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Fichiers d%27en-tête\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Fichiers d%27en-tête\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
+      <Filter>Fichiers sources\Manager\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Fichiers d%27en-tête\Map\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Fichiers d%27en-tête\Map\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Fichiers sources\Manager\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureData.h">
+      <Filter>Fichiers sources\Manager\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="FontData.h">
+      <Filter>Fichiers sources\Manager\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Fichiers sources\Manager\Font</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MoonlighterLike.rc">
+      <Filter>Fichiers de ressources</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

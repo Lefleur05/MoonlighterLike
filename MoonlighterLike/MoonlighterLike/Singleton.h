@@ -2,10 +2,11 @@
 template <typename Class>
 class Singleton
 {
+protected:
 	static Class instance;
 
 public:
-	Class GetInstance()
+	static Class& GetInstance()
 	{
 		return instance;
 	}
